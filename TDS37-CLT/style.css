@@ -74,8 +74,18 @@
 
 .main #home .container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    padding-top: 5vw;
+    gap: 2rem;
 
+}
+
+.main #home .container .box-1{
+
+}
+.box-2 img {
+    width: 15rem;
+    height: 15rem;
 }
 
