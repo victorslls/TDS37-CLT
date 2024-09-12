@@ -9,14 +9,18 @@
 }
 
 
-.header{
+.header {
+    position: absolute; /* Correção do valor para position */
     display: flex;
-    background-color: rgb(75, 13, 125);
+    background-color: rgba(0, 0, 0, 0.2); /* Fundo preto com 90% de opacidade */
     width: 100%;
     height: 10vh;
     align-items: center;
     justify-content: space-around;
+    top: 0; /* Garante que o cabeçalho fique no topo */
+    left: 0; /* Garante que o cabeçalho ocupe toda a largura */
 }
+
 
 .header .header-logo {
     display: flex;
@@ -42,7 +46,7 @@
 }
 .header .nav .lista-menu .lista {
     display: flex;
-    background-color: aquamarine;
+    background-color: rgba(0, 0, 0, 0.082);
     padding: 1.5rem;
     gap: 2rem;
     border-radius: 10%;
@@ -50,7 +54,7 @@
 }
 
 .header .nav .lista-menu .lista:hover {
-    background-color: rgb(67, 147, 120);
+    background-color: rgba(30, 72, 187, 0.466);
 }
 
 .header .nav .lista-menu .menu{
@@ -128,7 +132,7 @@
 .main #home .container .box-1 .btn{
     width: 40%;
     border-radius: 25px;
-    background-color: rgba(45, 156, 151, 0.5);
+    background-color: rgba(0, 0, 0, 0.082);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 1rem;
     transition: all 1s ease-out;
@@ -139,7 +143,7 @@
 }
 .main #home .container .box-1 .btn:hover{
     cursor: pointer;
-    background-color: rgba(10, 230, 10, 0.0);
+    background-color: rgba(30, 72, 187, 0.466);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     color: #c78227;
   
@@ -152,19 +156,22 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background: linear-gradient(to right, rgba(255, 36, 7, 0.082), rgba(238, 255, 5, 0.678));
     align-items: center;
     gap: 2rem;
+    border-radius: 10px;
     
 }
-.box-2 img {
-    width: 15rem;
-    height: 15rem;
-    border-radius: 50%;
-}
+
 
 .main #home .container .box-2 h2{
-    font-size: 44px;
-    color:    rgb(43, 112, 139);
+     font-size: 3rem; /* Tamanho da fonte ajustável */
+    font-weight: bold; /* Tamanho da fonte ajustável */
+    background: linear-gradient(to right, rgba(255, 36, 7, 0.774), rgb(5, 105, 255));
+    -webkit-background-clip: text; /* Faz o gradiente aplicar-se ao texto */
+    -webkit-text-fill-color: transparent; /* Torna o texto transparente para mostrar o gradiente */
+    background-clip: text; /* Adicional para suportar outros navegadores */
+    color: transparent;
     
 }
 
@@ -172,3 +179,51 @@
     color:   rgb(42, 182, 218);
 }
 
+
+.main .sobre{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, rgba(15, 53, 4, 0.37), rgba(10, 10, 238, 0.486)); /* Gradiente de Aqua para Azul Escuro */
+    display: flex;
+    padding-top: 100px;
+    align-items: start;
+    justify-content: space-around;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+
+.main .sobre .title {
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.082);
+    
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    gap: 9rem;
+    
+
+   
+    
+}
+
+.main .sobre .title .btn{
+    width: 100%;
+    border-radius: 25px;
+    padding-bottom: 80px;
+    background-color: rgba(0, 0, 0, 0.082);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    transition: all 1s ease-out;
+    font-size: 20px;
+    border:  1px solid rgba(45, 156, 151, 0.5);;
+    
+}
+.main .sobre .title .btn:hover{
+    cursor: pointer;
+    background-color: rgba(30, 72, 187, 0.466);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #c78227;
+  
+    
+}
